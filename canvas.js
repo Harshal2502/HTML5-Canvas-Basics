@@ -95,11 +95,11 @@ function Circle(x, y, dx, dy, r) {
         if (mouse.x - this.x < 30 && mouse.x - this.x > -50
             && mouse.y - this.y < 30 && mouse.y - this.y > -50) {
             if (this.r < maxRadius) {
-                this.r += 1;
+                this.r += 0.8;
             }
         }
         else if (this.r > r) {
-            this.r -= 1;
+            this.r -= 0.6;
         }
 
         this.draw();
@@ -116,10 +116,10 @@ function init() {
 
         var r = Math.random() * 4 + 1;
         var x = Math.random() * (innerWidth - r * 2) + r;
-        var dx = (Math.random() - 0.5) * 2.5;
+        var dx = (Math.random() - 0.5);
 
         var y = Math.random() * (innerHeight - r * 2) + r;
-        var dy = (Math.random() - 0.5) * 2.5;
+        var dy = (Math.random() - 0.5);
 
         array.push(new Circle(x, y, dx, dy, r));
     }
