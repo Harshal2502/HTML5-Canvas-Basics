@@ -1,1 +1,3 @@
-# HTML5-Canvas-Basics
+HTML5 Canvas and JavaScript project..
+
+See it Live: 
